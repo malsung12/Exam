@@ -1,6 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
+
+
+    <TextView
+            android:text="인원예약"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_title2"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+    <TextView
+        android:text="어른(15000원)"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/txt_15"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="청소년(12000원)"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/txt_12"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="어린이(8000원)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_80"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:text="기본할인(5% 할인)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_5"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="현금할인(10% 할인)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_10"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="MemberShip있음(20% 할인)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_20"
+                android:layout_weight="1" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:text="예약완료"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_finish"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="시간예약 GO"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_timer"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="총 명수:"
+            android:ems="10"
+            android:id="@+id/etxt_all"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="할인금액:"
+            android:ems="10"
+            android:id="@+id/etxt_dcnt"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="결제금액:"
+            android:ems="10"
+            android:id="@+id/etxt_price"
+            android:layout_weight="1" />
+    </LinearLayout>
 
 </LinearLayout>
